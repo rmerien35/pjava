@@ -1,0 +1,11 @@
+public class Test { 
+
+static int max;
+
+
+public static void main(String[] args)
+{
+}
+
+}
+

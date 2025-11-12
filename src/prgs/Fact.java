@@ -1,0 +1,34 @@
+public class Fact {
+
+static int res;
+static int n;
+static String chaine;
+
+/* Factorielle recursive */
+
+static int fact (int n )
+{
+int res;
+
+if (n==1) return 1;
+else
+{
+res = n-1;
+return n*fact(res);
+}
+
+}
+
+/* Programme principal */
+
+public static void main(String[] args)
+{
+chaine = "Valeur n:";
+System.out.println(chaine);
+try { n = System.in.read(); } catch (Exception e) {}
+
+res = fact(n);
+System.out.println(res);
+}
+
+}

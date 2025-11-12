@@ -1,0 +1,51 @@
+{------ Instructions -------}
+        JMP MAIN
+MAIN: 
+        PUSH 423
+        POP MAIN.x
+while1: 
+        PUSH MAIN.nb
+        PUSH MAIN.x
+        EQU
+        NOT
+        JNC endwhile1
+        PUSH 'Entrer un nombre entre 0 et 999 >'
+        POP MAIN.chaine
+        WRITE MAIN.chaine
+        READ MAIN.nb
+if1: 
+        PUSH MAIN.nb
+        PUSH MAIN.x
+        EQU
+        JNC else1
+then1: 
+        PUSH 'Bravo vous avez gagner !!!'
+        POP MAIN.chaine
+        WRITE MAIN.chaine
+        JMP endif1
+else1: 
+if2: 
+        PUSH MAIN.nb
+        PUSH MAIN.x
+        INF
+        JNC else2
+then2: 
+        PUSH 'Plus haut...'
+        POP MAIN.chaine
+        WRITE MAIN.chaine
+        JMP endif2
+else2: 
+        PUSH 'Plus bas...'
+        POP MAIN.chaine
+        WRITE MAIN.chaine
+endif2: 
+endif1: 
+        JMP while1
+endwhile1: 
+        END
+{---------- Data -----------}
+{ Fonction> MAIN: Type_VOID }
+MAIN.nb:   Type_INTEGER
+MAIN.x:   Type_INTEGER
+MAIN.chaine:   Type_STRING 
+

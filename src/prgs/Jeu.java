@@ -1,0 +1,41 @@
+public class Jeu { 
+
+static int nb; 
+static int x;
+static String chaine;
+
+/* Jeu du nombre inconnu */
+
+public static void main(String[] args)
+{
+x=423;
+
+while (!( nb==x )) 
+{
+chaine = "Entrer un nombre entre 0 et 999 >";
+System.out.println(chaine);
+
+try { nb = System.in.read(); } catch (Exception e) {}
+
+if (nb==x) {
+chaine = "Bravo vous avez gagner !!!";
+System.out.println(chaine);
+}
+else
+if (nb<x) 
+{
+chaine = "Plus haut...";
+System.out.println(chaine);
+}
+else
+{
+chaine = "Plus bas...";
+System.out.println(chaine);
+};
+
+};
+
+}
+
+}
+

@@ -1,0 +1,13 @@
+public class HelloWorld { 
+
+public static void main(String[] args)
+{
+
+String chaine;
+chaine = "HelloWorld !!";
+System.out.println(chaine);
+
+}
+
+}
+
