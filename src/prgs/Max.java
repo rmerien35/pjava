@@ -1,3 +1,4 @@
+package prgs;
 public class Max
 {
 

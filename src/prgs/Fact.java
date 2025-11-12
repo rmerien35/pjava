@@ -1,3 +1,4 @@
+package prgs;
 public class Fact {
 
 static int res;
