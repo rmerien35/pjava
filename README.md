@@ -14,7 +14,7 @@ gram\_pjava.dat is the grammar of the language use by gbf program (grammar compi
 
 
 
-Use the main class to compile from prgs/\*.pjava to obj files (text) you can run with the imp "Interpreteur pour Machine à Pile" (stack machine interpreter in english).
+Use the main class to compile from prgs/\*.pjava to obj files (assembler) you can run with the imp "Interpreteur pour Machine à Pile" (stack machine interpreter in english).
 
 
 
